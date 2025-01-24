@@ -36,6 +36,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text= answer)
 
 if __name__ == '__main__':
+    # enter your token here
     tok = "token"
     application = ApplicationBuilder().token(tok).build()
     start_handler = CommandHandler('start', start)
